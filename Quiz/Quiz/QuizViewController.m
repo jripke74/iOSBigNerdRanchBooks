@@ -1,5 +1,5 @@
 //
-//  AppDelegate.m
+//  QuizViewController.m
 //  Quiz
 //
 //  Created by Jeff Ripke on 10/25/17.

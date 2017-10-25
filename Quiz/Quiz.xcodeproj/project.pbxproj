@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		897D222D1FA1152500CE2699 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D222C1FA1152500CE2699 /* AppDelegate.m */; };
-		897D22301FA1152500CE2699 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D222F1FA1152500CE2699 /* ViewController.m */; };
-		897D22331FA1152500CE2699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897D22311FA1152500CE2699 /* Main.storyboard */; };
 		897D22351FA1152500CE2699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897D22341FA1152500CE2699 /* Assets.xcassets */; };
-		897D22381FA1152500CE2699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897D22361FA1152500CE2699 /* LaunchScreen.storyboard */; };
 		897D223B1FA1152500CE2699 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D223A1FA1152500CE2699 /* main.m */; };
+		897D224C1FA11E2500CE2699 /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897D224A1FA11E2500CE2699 /* QuizViewController.m */; };
+		897D224D1FA11E2500CE2699 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897D224B1FA11E2500CE2699 /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		897D22281FA1152500CE2699 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897D222B1FA1152500CE2699 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		897D222C1FA1152500CE2699 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		897D222E1FA1152500CE2699 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		897D222F1FA1152500CE2699 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		897D22321FA1152500CE2699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		897D22341FA1152500CE2699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		897D22371FA1152500CE2699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897D22391FA1152500CE2699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897D223A1FA1152500CE2699 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		897D22491FA11E2500CE2699 /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		897D224A1FA11E2500CE2699 /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		897D224B1FA11E2500CE2699 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +58,10 @@
 			children = (
 				897D222B1FA1152500CE2699 /* AppDelegate.h */,
 				897D222C1FA1152500CE2699 /* AppDelegate.m */,
-				897D222E1FA1152500CE2699 /* ViewController.h */,
-				897D222F1FA1152500CE2699 /* ViewController.m */,
-				897D22311FA1152500CE2699 /* Main.storyboard */,
+				897D22491FA11E2500CE2699 /* QuizViewController.h */,
+				897D224A1FA11E2500CE2699 /* QuizViewController.m */,
+				897D224B1FA11E2500CE2699 /* QuizViewController.xib */,
 				897D22341FA1152500CE2699 /* Assets.xcassets */,
-				897D22361FA1152500CE2699 /* LaunchScreen.storyboard */,
 				897D22391FA1152500CE2699 /* Info.plist */,
 				897D223A1FA1152500CE2699 /* main.m */,
 			);
@@ -129,9 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897D22381FA1152500CE2699 /* LaunchScreen.storyboard in Resources */,
 				897D22351FA1152500CE2699 /* Assets.xcassets in Resources */,
-				897D22331FA1152500CE2699 /* Main.storyboard in Resources */,
+				897D224D1FA11E2500CE2699 /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,32 +138,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897D22301FA1152500CE2699 /* ViewController.m in Sources */,
 				897D223B1FA1152500CE2699 /* main.m in Sources */,
 				897D222D1FA1152500CE2699 /* AppDelegate.m in Sources */,
+				897D224C1FA11E2500CE2699 /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		897D22311FA1152500CE2699 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				897D22321FA1152500CE2699 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		897D22361FA1152500CE2699 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				897D22371FA1152500CE2699 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		897D223C1FA1152500CE2699 /* Debug */ = {
@@ -284,7 +261,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffripke.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -298,7 +275,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffripke.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
