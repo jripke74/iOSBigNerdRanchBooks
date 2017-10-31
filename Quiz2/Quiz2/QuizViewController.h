@@ -1,8 +1,8 @@
 //
-//  QuizViewController.h
-//  Quiz
+//  ViewController.h
+//  Quiz2
 //
-//  Created by Jeff Ripke on 10/30/17.
+//  Created by Jeff Ripke on 10/31/17.
 //  Copyright © 2017 Jeff Ripke. All rights reserved.
 //
 
@@ -10,4 +10,6 @@
 
 @interface QuizViewController : UIViewController
 
+
 @end
+
