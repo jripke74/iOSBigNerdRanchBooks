@@ -15,6 +15,9 @@ int main(int argc, const char * argv[]) {
         [items addObject:@"Two"];
         [items addObject:@"Three"];
         [items insertObject:@"Zero" atIndex:0];
+        for (NSString *item in items) {
+            NSLog(@"%@", item);
+        }
         items = nil;
     }
     return 0;
