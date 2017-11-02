@@ -19,11 +19,11 @@
 - (void)setItemName:(NSString *)str;
 - (NSString *)itemName;
 
-- (void)setSerialnumber:(NSString *)str;
+- (void)setSerialNumber:(NSString *)str;
 - (NSString *)serialNumber;
 
 - (void)setValueInDollars:(int)v;
 - (int)valueInDollars;
 
-- (NSDate *)dataCreated;
+- (NSDate *)dateCreated;
 @end

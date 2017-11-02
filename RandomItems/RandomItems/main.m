@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Item.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,6 +19,9 @@ int main(int argc, const char * argv[]) {
         for (NSString *item in items) {
             NSLog(@"%@", item);
         }
+        
+        Item *item = [[Item alloc] init];
+        NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated], [item serialNumber], [item valueInDollars]);
         items = nil;
     }
     return 0;
