@@ -21,6 +21,9 @@ int main(int argc, const char * argv[]) {
         }
         
         Item *item = [[Item alloc] init];
+        [item setItemName:@"Red Sofa"];
+        [item setSerialNumber:@"1wqase3"];
+        [item setValueInDollars:100];
         NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated], [item serialNumber], [item valueInDollars]);
         items = nil;
     }
