@@ -20,13 +20,8 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", item);
         }
         
-        Item *item = [[Item alloc] init];
-        //[item setItemName:@"Red Sofa"];
-        item.itemName = @"Red sofa";
-        //[item setSerialNumber:@"1wqase3"];
-        item.serialNumber = @"1wqase3";
-        //[item setValueInDollars:100];
-        item.valueInDollars = 100;
+        Item *item = [[Item alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
+        
         NSLog(@"%@", item);
         items = nil;
     }
