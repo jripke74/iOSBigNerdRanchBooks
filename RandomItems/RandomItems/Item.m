@@ -10,6 +10,17 @@
 
 @implementation Item
 
+- (instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber {
+    self = [super init];
+    if (self) {
+        _itemName = name;
+        _serialNumber = sNumber;
+        _valueInDollars = value;
+        _dateCreated = [[NSDate alloc] init];
+    }
+    return self;
+}
+
 - (void)setItemName:(NSString *)str {
     _itemName = str;
 }
@@ -40,5 +51,6 @@
                                    self.itemName, self.serialNumber, self.valueInDollars, self.dateCreated];
     return descriptionString;
 }
+
 
 @end
