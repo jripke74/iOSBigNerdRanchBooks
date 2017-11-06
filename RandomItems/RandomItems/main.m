@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
         item.serialNumber = @"1wqase3";
         //[item setValueInDollars:100];
         item.valueInDollars = 100;
-        NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated], [item serialNumber], [item valueInDollars]);
+        NSLog(@"%@", item);
         items = nil;
     }
     return 0;
