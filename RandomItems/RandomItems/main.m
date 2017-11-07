@@ -21,8 +21,12 @@ int main(int argc, const char * argv[]) {
         }
         
         Item *item = [[Item alloc] initWithItemName:@"Red Sofa" valueInDollars:100 serialNumber:@"A1B2C"];
-        
         NSLog(@"%@", item);
+        Item *itemWithName = [[Item alloc] initWithItemName:@"Blue Sofa"];
+        NSLog(@"%@", itemWithName);
+        Item *itemWithNoName = [[Item alloc] init];
+        NSLog(@"%@", itemWithNoName);
+        
         items = nil;
     }
     return 0;

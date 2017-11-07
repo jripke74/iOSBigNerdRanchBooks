@@ -16,6 +16,7 @@
     NSDate *_dateCreated;
 }
 
++ (instancetype)randomItem;
 
 - (NSString *)itemName;
 
