@@ -76,4 +76,8 @@
     Item *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
     return newItem;
 }
+
+- (void)dealloc {
+    NSLog(@"Destroyed: %@:", self);
+}
 @end
