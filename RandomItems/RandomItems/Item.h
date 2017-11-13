@@ -15,12 +15,12 @@
 - (instancetype)initWithItemName: (NSString *)name valueInDollars:(int)value serialNumber:(NSString *)name;
 - (instancetype)initWithItemName: (NSString *)sNumber;
 
-@property (nonatomic) Item *containedItem;
-@property (nonatomic) Item *container;
+@property (nonatomic, strong) Item *containedItem;
+@property (nonatomic, weak) Item *container;
 
-@property (nonatomic) NSString *itemName;
-@property (nonatomic) NSString *serialNumber;
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic, copy) NSString *serialNumber;
 @property (nonatomic) int valueInDollars;
-@property (nonatomic, readonly) NSDate *dateCreated;
+@property (nonatomic, readonly, strong) NSDate *dateCreated;
 
 @end
