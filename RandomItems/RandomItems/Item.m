@@ -29,31 +29,6 @@
     return [self initWithItemName:@"Item"];
 }
 
-- (void)setItemName:(NSString *)str {
-    _itemName = str;
-}
-- (NSString *)itemName {
-    return _itemName;
-}
-
-- (void)setSerialNumber:(NSString *)str {
-    _serialNumber = str;
-}
-- (NSString *)serialNumber {
-    return _serialNumber;
-}
-
-- (void)setValueInDollars:(int)v {
-    _valueInDollars = v;
-}
-- (int)valueInDollars {
-    return _valueInDollars;
-}
-
-- (NSDate *)dateCreated {
-    return _dateCreated;
-}
-
 - (NSString *)description {
     NSString *descriptionString = [[NSString alloc] initWithFormat:@"%@ (%@): worth $%d, recorded on %@",
                                    self.itemName, self.serialNumber, self.valueInDollars, self.dateCreated];
@@ -75,23 +50,6 @@
                                     '0' + arc4random() % 10];
     Item *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
     return newItem;
-}
-
-- (void)setContainedItem:(Item *)item {
-    _containedItem = item;
-    item.container = self;
-}
-
-- (Item *)containedItem {
-    return _containedItem;
-}
-
-- (void)setContainer:(Item *)item {
-    _container = item;
-}
-
-- (Item *)container {
-    return _container;
 }
 
 - (void)dealloc {

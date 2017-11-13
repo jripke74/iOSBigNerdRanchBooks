@@ -9,37 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface Item : NSObject
-{
-    NSString *_itemName;
-    NSString *_serialNumber;
-    int _valueInDollars;
-    NSDate *_dateCreated;
-    
-    Item *_containedItem;
-    __weak Item *_container;
-}
 
 + (instancetype)randomItem;
 
-- (NSString *)itemName;
+- (instancetype)initWithItemName: (NSString *)name valueInDollars:(int)value serialNumber:(NSString *)name;
+- (instancetype)initWithItemName: (NSString *)sNumber;
 
-- (void)setSerialNumber:(NSString *)str;
-- (NSString *)serialNumber;
+@property (nonatomic) Item *containedItem;
+@property (nonatomic) Item *container;
 
-- (void)setValueInDollars:(int)v;
-- (int)valueInDollars;
-
-- (NSDate *)dateCreated;
-
-- (instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)sNumber;
-- (instancetype)initWithItemName:(NSString *)name;
-
-- (void)setContainedItem:(Item *)item;
-- (Item *)containedItem;
-
-- (void)setContainer:(Item *)item;
-- (Item *)container;
-
-- (void)setItemName:(NSString *)str;
+@property (nonatomic) NSString *itemName;
+@property (nonatomic) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic, readonly) NSDate *dateCreated;
 
 @end
