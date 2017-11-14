@@ -29,6 +29,11 @@
     return [self initWithItemName:@"Item"];
 }
 
+- (void)setContainedItem:(Item *)containedItem {
+    _containedItem = containedItem;
+    self.containedItem.container = self;
+}
+
 - (NSString *)description {
     NSString *descriptionString = [[NSString alloc] initWithFormat:@"%@ (%@): worth $%d, recorded on %@",
                                    self.itemName, self.serialNumber, self.valueInDollars, self.dateCreated];
