@@ -24,7 +24,11 @@
     HypnosisView *firstView = [[HypnosisView alloc] initWithFrame:firstFrame];
     firstView.backgroundColor = [UIColor redColor];
     [viewController.view addSubview:firstView];
-    [self.window setBackgroundColor: [UIColor whiteColor]];
+    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
+    HypnosisView *secondView = [[HypnosisView alloc] initWithFrame:secondFrame];
+    secondView.backgroundColor = [UIColor blueColor];
+    [viewController.view addSubview:secondView];
+    [self.window setBackgroundColor: [UIColor yellowColor]];
     [self.window makeKeyAndVisible];
     return YES;
 }
