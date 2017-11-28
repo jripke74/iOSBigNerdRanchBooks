@@ -10,6 +10,14 @@
 
 @implementation HypnosisView
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
+
 - (void)drawRect:(CGRect)rect {
     CGRect bounds = self.bounds;
     CGPoint center;
@@ -19,6 +27,8 @@
     UIBezierPath *path = [[UIBezierPath alloc] init];
     
     [path addArcWithCenter:center radius:radius startAngle:0.0 endAngle:M_PI * 2.0 clockwise:YES];
+    path.lineWidth = 10;
+    [[UIColor lightGrayColor] setStroke];
     [path stroke];
 }
 

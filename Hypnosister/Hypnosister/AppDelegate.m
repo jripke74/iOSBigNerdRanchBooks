@@ -23,9 +23,9 @@
     //CGRect firstFrame = CGRectMake(160, 240, 100, 150);
     CGRect firstFrame = self.window.bounds;
     HypnosisView *firstView = [[HypnosisView alloc] initWithFrame:firstFrame];
-    firstView.backgroundColor = [UIColor redColor];
+    //firstView.backgroundColor = [UIColor redColor];
     [viewController.view addSubview:firstView];
-    [self.window setBackgroundColor: [UIColor yellowColor]];
+    //[self.window setBackgroundColor: [UIColor yellowColor]];
     [self.window makeKeyAndVisible];
     return YES;
 }
