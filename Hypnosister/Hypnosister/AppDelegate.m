@@ -20,14 +20,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIViewController *viewController = [[UIViewController alloc] init];
     self.window.rootViewController = viewController;
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    //CGRect firstFrame = CGRectMake(160, 240, 100, 150);
+    CGRect firstFrame = self.window.bounds;
     HypnosisView *firstView = [[HypnosisView alloc] initWithFrame:firstFrame];
     firstView.backgroundColor = [UIColor redColor];
     [viewController.view addSubview:firstView];
-    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
-    HypnosisView *secondView = [[HypnosisView alloc] initWithFrame:secondFrame];
-    secondView.backgroundColor = [UIColor blueColor];
-    [viewController.view addSubview:secondView];
     [self.window setBackgroundColor: [UIColor yellowColor]];
     [self.window makeKeyAndVisible];
     return YES;
