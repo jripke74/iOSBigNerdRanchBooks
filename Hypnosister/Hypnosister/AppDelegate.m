@@ -25,7 +25,7 @@
     HypnosisView *firstView = [[HypnosisView alloc] initWithFrame:firstFrame];
     //firstView.backgroundColor = [UIColor redColor];
     [viewController.view addSubview:firstView];
-    //[self.window setBackgroundColor: [UIColor yellowColor]];
+    [self.window setBackgroundColor: [UIColor yellowColor]];
     [self.window makeKeyAndVisible];
     return YES;
 }
